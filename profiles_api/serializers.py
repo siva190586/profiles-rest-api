@@ -15,7 +15,9 @@ class UserProfileSerializer(serializers.ModelSerializer):
         extra_kwagrs = {
             'password': {
                 'write_only': True,
-                'style': {'input_type':'password'}
+                'style': {
+                    'input_type':'password'
+                }
             }
         }
     
